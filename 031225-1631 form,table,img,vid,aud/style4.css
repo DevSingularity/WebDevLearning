@@ -1,0 +1,202 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ARCTIC BACKGROUND */
+body {
+    background: linear-gradient(145deg, #001f33, #000a14, #000000);
+    color: #d9f6ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* FROSTED GLASS CARDS */
+div {
+    width: 95%;
+    max-width: 900px;
+    background: rgba(0, 40, 60, 0.35);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(150, 225, 255, 0.35);
+    box-shadow:
+        0 0 25px rgba(120, 200, 255, 0.25),
+        inset 0 0 20px rgba(150, 220, 255, 0.15);
+    animation: fadeIn 0.9s ease-in-out;
+}
+
+/* Fade-in Entry */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(35px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* TITLE — ICY GLOW */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: #bdefff;
+    text-shadow:
+        0 0 12px #5fd6ff,
+        0 0 25px #47bfff,
+        0 0 45px #27a4ff;
+    animation: icePulse 3s infinite alternate;
+}
+
+@keyframes icePulse {
+    from { text-shadow: 0 0 10px #6fdeff; }
+    to   { text-shadow: 0 0 35px #8be8ff; }
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #cfefff;
+}
+
+/* IMAGES — FROZEN GLOW */
+img {
+    display: block;
+    margin: 18px auto;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(120, 200, 255, 0.3);
+    transition: 0.45s ease;
+}
+
+img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 35px rgba(180, 240, 255, 0.7);
+    filter: brightness(1.15);
+}
+
+/* AUDIO */
+audio {
+    display: block;
+    margin: 15px auto;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: #e8faff;
+}
+
+table header {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #b8eeff;
+    text-shadow: 0 0 12px #82ddff;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid rgba(180, 235, 255, 0.25);
+}
+
+th {
+    background: rgba(180, 235, 255, 0.15);
+    color: #a1e6ff;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* Hover freeze glow */
+tr:hover {
+    background: rgba(200, 240, 255, 0.08);
+    transition: 0.3s;
+}
+
+/* FORMS */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #c6f1ff;
+    font-weight: 600;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(150, 220, 255, 0.35);
+    background: rgba(0, 45, 70, 0.55);
+    color: #e8faff;
+    outline: none;
+    backdrop-filter: blur(6px);
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 14px #79e1ff;
+    border-color: #a8f0ff;
+}
+
+/* RADIO AND CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #93e6ff;
+}
+
+/* ARCTIC BUTTON */
+input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #02131b;
+    background: linear-gradient(135deg, #7fe5ff, #48ccff, #1db6ff);
+    box-shadow:
+        0 0 14px #7fe5ff,
+        0 0 30px rgba(80, 200, 255, 0.8);
+    transition: 0.35s ease;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.03) translateY(-3px);
+    background: linear-gradient(135deg, #a7efff, #66d9ff, #33c8ff);
+    box-shadow:
+        0 0 25px #a8f0ff,
+        0 0 50px rgba(120, 230, 255, 1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.9rem;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    input[type="button"] {
+        font-size: 1rem;
+    }
+}

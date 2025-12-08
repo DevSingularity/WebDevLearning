@@ -1,0 +1,232 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rajdhani", "Orbitron", sans-serif;
+}
+
+/* RGB BACKGROUND */
+body {
+    background: linear-gradient(135deg, #090909, #000000);
+    color: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* UNIVERSAL RGB GLOW CARDS */
+div {
+    width: 95%;
+    max-width: 900px;
+    background: rgba(10, 10, 10, 0.85);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.9s ease-in-out;
+    border: 2px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    background-image:
+        linear-gradient(#0a0a0a, #0a0a0a),
+        linear-gradient(120deg,
+            #ff005e,
+            #ffae00,
+            #00ff6a,
+            #00d0ff,
+            #7a00ff,
+            #ff00f5);
+    box-shadow: 0 0 25px rgba(255, 0, 120, 0.2);
+}
+
+/* Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RGB ANIMATED TITLE */
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    background: linear-gradient(
+        90deg,
+        #ff0040,
+        #ffae00,
+        #00ff6a,
+        #00ccff,
+        #a700ff,
+        #ff00d4
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    animation: rgbTitleFlow 5s linear infinite;
+}
+
+@keyframes rgbTitleFlow {
+    0% { background-position: 0%; }
+    100% { background-position: 400%; }
+}
+
+p {
+    text-align: center;
+    color: #cccccc;
+}
+
+/* IMAGES */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+    transition: 0.4s ease;
+    box-shadow: 0 0 25px rgba(255, 0, 100, 0.3);
+}
+
+img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(0, 255, 212, 0.6);
+}
+
+/* AUDIO */
+audio {
+    display: block;
+    margin: 15px auto;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: #f0f0f0;
+}
+
+table header {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff0044, #00ff99, #008cff, #ff00e1);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgbFlow 6s infinite linear;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Hover Glow */
+tr:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transition: 0.3s;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* FORMS */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #111;
+    color: #e6e6e6;
+    outline: none;
+    transition: 0.3s ease;
+    border: 2px solid #222;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #00ffaa;
+    box-shadow: 0 0 12px #00ffaa;
+}
+
+/* RADIO & CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #00ffaa;
+}
+
+/* RGB GAMING BUTTON */
+input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        #ff0044,
+        #ffae00,
+        #00ff6a,
+        #00ccff,
+        #a700ff,
+        #ff00e1
+    );
+    background-size: 300%;
+    animation: rgbButton 4s linear infinite;
+    box-shadow:
+        0 0 15px #ff00c8,
+        0 0 25px rgba(0, 255, 212, 0.5);
+    transition: 0.4s ease;
+}
+
+@keyframes rgbButton {
+    0% { background-position: 0; }
+    100% { background-position: 300%; }
+}
+
+/* Hover Expand */
+input[type="button"]:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow:
+        0 0 25px #00ffe8,
+        0 0 40px rgba(255, 0, 200, 0.9);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+    }
+    th, td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    input[type="button"] {
+        font-size: 1rem;
+    }
+}

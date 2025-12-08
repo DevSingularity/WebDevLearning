@@ -1,0 +1,184 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+/* Hacker Background */
+body {
+    background: #000;
+    color: #e60000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Glowing Container */
+div {
+    width: 95%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.85);
+    border: 1px solid #330000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow:
+        0 0 15px rgba(255, 0, 0, 0.3),
+        inset 0 0 10px rgba(255, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title Glow */
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #ff1a1a;
+    text-shadow: 0 0 10px #ff1a1a, 0 0 25px #b30000;
+    animation: pulseGlow 2.5s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    from { text-shadow: 0 0 10px #ff1a1a; }
+    to { text-shadow: 0 0 25px #ff0000; }
+}
+
+/* Paragraph */
+p {
+    text-align: center;
+    color: #ff4d4d;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    filter: grayscale(30%);
+    transition: transform 0.4s ease, filter 0.4s;
+}
+
+img:hover {
+    transform: scale(1.07);
+    filter: grayscale(0%);
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 15px auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #ff3333;
+}
+
+table header {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    color: #ff1a1a;
+    text-shadow: 0 0 10px #ff1a1a;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #330000;
+    text-align: center;
+}
+
+th {
+    background: #1a0000;
+    color: #ff1a1a;
+}
+
+tr:nth-child(even) {
+    background: #0d0000;
+}
+
+/* Row hover hack effect */
+tr:hover {
+    background: #260000;
+    transition: 0.3s;
+}
+
+/* Form Fields */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ff3333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: #0d0d0d;
+    border: 1px solid #330000;
+    color: #e60000;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 10px #ff1a1a;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(1.2);
+    accent-color: #ff0000;
+}
+
+/* Hacker Button */
+input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background: #b30000;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff0000;
+    transition: 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #ff1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #b30000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    input[type="button"] {
+        font-size: 1em;
+    }
+}
