@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 3- card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .out {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* to center the card */
+        }
+
+        .container {
+            align-self: auto;
+            width: 30vw;
+            /* height: 90vh; */
+            height: auto;
+            border: 2px solid grey;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .img {
+            margin-bottom: 5px;
+            border-radius: 25px;
+        }
+
+        .attr {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 10px;
+            gap: 10px;
+            /*gap bw attrs*/
+        }
+
+        .at1,
+        .at2 {
+            width: auto;
+            text-align: center;
+            border: 2px solid rgba(71, 68, 68, 0.368);
+            border-radius: 25px;
+            padding: 5px;
+        }
+
+        .name {
+            margin: 5px 0px 0px 5px;
+            font-size: 30px;
+        }
+
+        .para {
+            margin-left: 5px;
+            font-size: 15px;
+        }
+
+        .btn {
+            width: fit-content;
+            align-self: center;
+            padding: 10px;
+            font-size: 15px;
+            background: rgb(140, 239, 238);
+            text-align: center;
+            border-radius: 25px;
+            border-color: none;
+            color: rgb(1, 103, 101);
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="out">
+        <div class="container">
+            <img class='img' src="landscape.jpg" alt="img">
+            <div class="attr">
+                <div class="at1">Nature</div>
+                <div class="at2">Mountains</div>
+            </div>
+            <h2 class="name">Kashyap Mountains</h2>
+            <div class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nulla praesentium quisquam accusamus
+                dolore. Et ducimus enim officia aliquam.
+            </div>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

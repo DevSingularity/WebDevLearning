@@ -1,0 +1,20 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 40vw;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid red;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.box5{
+    width: 80vw;
+}
