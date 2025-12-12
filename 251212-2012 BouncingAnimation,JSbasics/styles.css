@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('../251210-1323 demosite/assets/images/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.container {
+    margin: auto;
+    width: 80vw;
+    height: 90vh;
+    background: rgb(27, 26, 26, 0.2);
+    border: 2px solid rgb(155, 154, 154);
+    border-radius: 10px;
+    position: relative;
+    top: 1vh;
+}
+
+.ball {
+    position: absolute;
+    bottom: 0;
+    width: 5vw;
+    height: 5vw;
+    border: 1px solid paleturquoise;
+    border-radius: 100%;
+    animation: bouncex 5s linear infinite, bouncey 5s ease-out infinite alternate;
+
+}
+
+@keyframes bouncex {
+    from {
+        left: 0;
+    }
+
+    to {
+        left:93%;
+    }
+}
+
+@keyframes bouncey {
+    0%{
+        bottom:0;
+    }
+    50%{
+        bottom: 100%;
+    }
+    100%{
+        bottom:0;
+    }
+}
