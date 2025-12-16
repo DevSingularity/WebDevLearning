@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .box{
+            background-color: aqua;
+            width: 45px;
+            height: 45px;
+            margin: 45px;
+            padding: 45px;
+            border: 2px solid black;
+        }
+        .temp{
+            background-color:cadetblue;
+            width: 45px;
+            height: 45px;
+            margin: 45px;
+            padding: 45px;
+            border: 2px solid black;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX 1</div>
+        <div class="box">BOX 2</div>
+        <div class="box">BOX 3</div>
+        <div class="box">BOX 4</div>
+        <div class="box">BOX 5</div>
+    </div>
+    <div class="container">
+        <div class="temp">BOX 1</div>
+        <div class="temp">BOX 2</div>
+        <div id="web" class="temp">BOX 3</div>
+        <div class="temp">BOX 4</div>
+        <div class="temp">BOX 5</div>
+    </div>
+    <script src="domNavigationProp.js"></script>
+</body>
+</html>
