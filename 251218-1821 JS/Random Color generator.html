@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color generator</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+    </div>
+    <script>
+        //We have to give each box a random background color using DOM
+        const boxes = document.querySelectorAll('.box');
+
+        // Function to generate random colors for boxes
+        function generateRandomBg() {
+            boxes.forEach(box => {
+                const ran= Math.random();
+                const r = Math.floor(Math.random() * 256);
+                const g = Math.floor(Math.random() * 256);
+                const b = Math.floor(Math.random() * 256);
+                box.style.backgroundColor = `rgb(${r},${g},${b})`;
+            });
+        }
+
+        // Set initial random colors on page load
+        generateRandomBg();
+
+        //lets implement a button to change colors on click
+        const button = document.createElement('button');
+        button.innerText = "Press me to change colors";
+        button.style.margin= "20px";
+        button.style.padding= "20px";
+        button.style.backgroundColor= "aqua";
+        document.body.prepend(button);
+        button.addEventListener('click', generateRandomBg);
+
+        //Now lets create a function to give random colors and images to boxes every second
+        setInterval(generateRandomBg, 1000);
+    </script>
+</body>
+</html>
