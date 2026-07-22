@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourShopName Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">YourShopName Admin</p>
+          <h1>Product manager</h1>
+          <p>Add products, write descriptions, set prices, and maintain stock from a separate admin project.</p>
+        </div>
+        <button id="exportProducts" type="button">Export JSON</button>
+      </section>
+
+      <section class="grid">
+        <form id="productForm" class="panel">
+          <h2>Add product</h2>
+          <label>Product name<input name="name" required placeholder="Pearl earrings" /></label>
+          <label>Price<input name="price" required type="number" min="0" placeholder="599" /></label>
+          <label>Category
+            <select name="category">
+              <option>Earrings</option>
+              <option>Necklaces</option>
+              <option>Bangles</option>
+              <option>Hair Accessories</option>
+              <option>Mangalsutras</option>
+            </select>
+          </label>
+          <label>Description<textarea name="description" required rows="4" placeholder="Short product description"></textarea></label>
+          <label>Stock
+            <select name="stock">
+              <option value="in">In Stock</option>
+              <option value="out">Out of Stock</option>
+            </select>
+          </label>
+          <label>Image URL<input name="image" placeholder="https://..." /></label>
+          <label>Upload image<input id="imageUpload" type="file" accept="image/*" /></label>
+          <img id="preview" class="preview" alt="Product preview" hidden />
+          <button type="submit">Add product</button>
+        </form>
+
+        <section class="panel">
+          <h2>Products</h2>
+          <div id="productList" class="product-list"></div>
+        </section>
+      </section>
+    </main>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+keyword,frequency,competitor_count,avg_rank,field_sources,intent_bucket
+printed,7,3,2.43,"description, tags, title",high-volume
+ethnic,4,3,2.75,"category, description, tags",high-volume
+cotton,7,2,1.86,"category, description, tags, title",high-volume
+kurta,7,2,3.33,"category, description, tags, title",high-volume
+kurti,6,2,2,"description, tags, title",high-volume
+printed straight,6,2,2.5,"description, tags, title",high-volume
+straight,6,2,2.5,"description, tags, title",high-volume
+daily,4,2,1.5,"description, tags, title",high-volume
+office,3,2,2.33,"description, title",high-volume
+fit,2,2,1.5,description,high-volume
+kurtas,2,2,1.5,category,high-volume
+kurtis,2,2,2,category,high-volume
+cotton printed straight,3,1,1,"description, tags, title",medium-volume
+printed straight kurti,3,1,1,"description, tags, title",medium-volume
+cotton printed,3,1,1,"description, tags, title",medium-volume
+straight kurti,3,1,1,"description, tags, title",medium-volume
+daily wear,3,1,1,"description, tags, title",medium-volume
+casual wear,3,1,2,"category, tags, title",medium-volume
+rayon,3,1,2,"description, tags, title",medium-volume
+casual,3,1,2,"category, tags, title",medium-volume
+anarkali cotton kurti,3,1,3,"description, tags, title",medium-volume
+anarkali cotton,3,1,3,"description, tags, title",medium-volume
+cotton kurti,3,1,3,"description, tags, title",medium-volume
+anarkali,3,1,3,"description, tags, title",medium-volume
+festive,3,1,3,"description, tags, title",medium-volume
+printed straight kurta,3,1,4,"description, tags, title",medium-volume
+straight kurta,3,1,4,"description, tags, title",medium-volume
+straight kurti daily,2,1,1,"tags, title",medium-volume
+kurti daily wear,2,1,1,"tags, title",medium-volume
+kurti daily,2,1,1,"tags, title",medium-volume
+ethnic print,2,1,2,"description, tags",medium-volume
+print,2,1,2,"description, tags",medium-volume
+cotton kurti festive,2,1,3,"tags, title",medium-volume
+kurti festive,2,1,3,"tags, title",medium-volume
+office wear,2,1,3,"description, title",medium-volume
+festive wear,2,1,3,"description, tags",medium-volume
+straight kurta pant,2,1,4,"description, title",medium-volume
+kurta pant,2,1,4,"description, title",medium-volume
+pant,2,1,4,"description, title",medium-volume
+straight kurti comfortable,1,1,1,description,medium-volume
+kurti comfortable fit,1,1,1,description,medium-volume
+comfortable fit office,1,1,1,description,medium-volume
+fit office daily,1,1,1,description,medium-volume
+office daily wear,1,1,1,description,medium-volume
+kurtis cotton kurtas,1,1,1,category,medium-volume
+kurti comfortable,1,1,1,description,medium-volume
+comfortable fit,1,1,1,description,medium-volume
+fit office,1,1,1,description,medium-volume
+office daily,1,1,1,description,medium-volume
+kurtis cotton,1,1,1,category,medium-volume
+cotton kurtas,1,1,1,category,medium-volume
+stylish rayon printed,1,1,2,title,medium-volume
+rayon printed kurta,1,1,2,title,medium-volume
+printed kurta casual,1,1,2,title,medium-volume
+kurta casual wear,1,1,2,title,medium-volume
+soft rayon kurta,1,1,2,description,medium-volume
+rayon kurta ethnic,1,1,2,description,medium-volume
+kurta ethnic print,1,1,2,description,medium-volume
+ethnic print three,1,1,2,description,medium-volume
+print three quarter,1,1,2,description,medium-volume
+three quarter sleeves,1,1,2,description,medium-volume
+quarter sleeves relaxed,1,1,2,description,medium-volume
+sleeves relaxed fit,1,1,2,description,medium-volume
+rayon ethnic print,1,1,2,tags,medium-volume
+ethnic print casual,1,1,2,tags,medium-volume
+print casual wear,1,1,2,tags,medium-volume
+kurtas casual wear,1,1,2,category,medium-volume
+stylish rayon,1,1,2,title,medium-volume
+rayon printed,1,1,2,title,medium-volume
+printed kurta,1,1,2,title,medium-volume
+kurta casual,1,1,2,title,medium-volume
+soft rayon,1,1,2,description,medium-volume
+rayon kurta,1,1,2,description,medium-volume
+kurta ethnic,1,1,2,description,medium-volume
+print three,1,1,2,description,medium-volume
+three quarter,1,1,2,description,medium-volume
+quarter sleeves,1,1,2,description,medium-volume
+sleeves relaxed,1,1,2,description,medium-volume
+relaxed fit,1,1,2,description,medium-volume
+rayon ethnic,1,1,2,tags,medium-volume

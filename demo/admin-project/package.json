@@ -1,0 +1,17 @@
+{
+  "name": "utsav-admin-project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5180",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4180"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.10",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {}
+}
